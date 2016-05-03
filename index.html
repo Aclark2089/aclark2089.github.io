@@ -6,24 +6,11 @@
   <link href="./css/styles.css" media="all" rel="stylesheet">
   <body>
 
-    <ul class="list list-repos">
-      <li class="item item-repo">
-        <a href="#">Repo Name</a>
-      </li>
-    </ul>
-
     <ul class="portfolio">
       {% for repo in site.github.public_repositories limit:60 %}
 
         {% if repo.fork != true %}
-          <li class="repo">
-            <a href = "{{ repo.homepage }}">{{ repo.name }}</a>
-          </li>
-          <li class="repo">
-            <h3><a href="{{ repo.name }}">{{ repo.name }}</a></h3>
-            <p>{{ repo.description }}</p>
-          </li>
-         <li class="repo">
+        <li class="repo">
            <h3><a href="{{ repo.homepage }}">{{ repo.name }}</a></h3>
            <p>{{ repo.description }}</p>
 
