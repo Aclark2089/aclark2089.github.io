@@ -4,8 +4,13 @@
 <!doctype html>
 <html lang="en-GB">
   <link href="./css/styles.css" media="all" rel="stylesheet">
+
   <body>
 
+<header>
+  <h1>R. Alex Clark Github Portfolio</h1>
+  { site.github.public_repositories.count }<h2> Projects In Total</h2>
+</header>
     <ul class="portfolio">
       {% for repo in site.github.public_repositories limit:60 %}
 
