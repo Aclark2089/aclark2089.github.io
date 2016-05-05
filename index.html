@@ -3,36 +3,34 @@
 ---
 <!doctype html>
 <html lang="en-GB">
-  <link href="./css/styles.css" media="all" rel="stylesheet">
+<link href="./css/styles.css" media="all" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-  <body>
+<body>
 
-<header>
-  <h1>Github Portfolio</h1>
-  <h1>R. Alex Clark</h1>
-  <h2>14 Projects In Total</h2>
-  <p>
-    A listing of current working projects
-  </p>
-</header>
-    <ul class="portfolio">
-      {% for repo in site.github.public_repositories limit:60 %}
+  <header>
+    <h1>Github Portfolio</h1>
+    <h1>R. Alex Clark</h1>
+    <h2>14 Projects In Total</h2>
+    <p>
+      A listing of current working projects
+    </p>
+  </header>
 
-        {% if repo.fork != true %}
+  <ul class="portfolio">
+    {% for repo in site.github.public_repositories limit:60 %}
+      {% if repo.fork != true %}
         <li class="repo">
-           <h3><a href="{{ repo.homepage }}">{{ repo.name }}</a></h3>
-           <p>{{ repo.description }}</p>
+          <h3><a href="{{ repo.homepage }}">{{ repo.name }}</a></h3>
+          <p>{{ repo.description }}</p>
+          <aside class="details">
+            <span>Stars {{ repo.stargazers_count }}</span>
+            <span>Forks {{ repo.forks_count }}</span>
+          </aside>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-           <aside class="details">
-             <span>Stars {{ repo.stargazers_count }}</span>
-             <span>Forks {{ repo.forks_count }}</span>
-           </aside>
-         </li>
-
-        {% endif %}
-
-        {% endfor %}
-    </ul>
-
-  </body>
+</body>
 </html>
