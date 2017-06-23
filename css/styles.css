@@ -1,2 +1,5 @@
-body {
-  background-color: teal; }
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  background-color: #1b1b1b; }

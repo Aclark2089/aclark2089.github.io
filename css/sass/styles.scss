@@ -1,5 +1,10 @@
-$color_background: teal;
+$color_body: #f2f2f2;
+$color_body_background: #1b1b1b;
 
-body {
-  background-color: $color_background;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $color_body;
+  background-color: $color_body_background;
 }
