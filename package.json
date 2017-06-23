@@ -1,0 +1,32 @@
+{
+  "name": "aclark2089.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aclark2089/aclark2089.github.io.git"
+  },
+  "author": "R. Alex Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aclark2089/aclark2089.github.io/issues"
+  },
+  "homepage": "https://github.com/aclark2089/aclark2089.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-inject": "^4.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "pump": "^1.0.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
