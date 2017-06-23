@@ -19,8 +19,8 @@ gulp.task('watch', function() {
 });
 
 // Take updated css file and min / inject it
-gulp.task('sass:watch', ['sass'], function (cb) {
-    rs('minify-css', ['inject']);
+gulp.task('sass:watch', function (cb) {
+    rs('sass', 'minify-css', cb);
 });
 
 // Uglify JS
