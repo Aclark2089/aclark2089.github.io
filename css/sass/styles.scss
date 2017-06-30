@@ -7,4 +7,15 @@ html, body {
   padding: 0;
   color: $color_body;
   background-color: $color_body_background;
+  font-family: Whitney,Helvetica,Arial,sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  padding: 0;
+  overflow: hidden;
+  color: #f2f2f2;
+  position: relative;
 }

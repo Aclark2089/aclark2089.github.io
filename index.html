@@ -3,6 +3,8 @@
 ---
 <!doctype html>
 <html lang="en-GB">
+<head>
+  <title>R. Alex Clark | Developer</title>
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta name="description" content="Personal portfolio of web developer R. Alex Clark.">
 <meta name="robots" content="index,follow">
@@ -12,10 +14,11 @@
 <link rel="stylesheet" href="/dist/normalize.css">
 <link rel="stylesheet" href="/dist/styles.css">
 <!-- endinject -->
+</head>
 
 <body>
 
-  <div id="scroll-body">
+  <div id="skrollr-body">
 
     <!-- Greeting -->
     <section id="greeting-section" class="section">
@@ -31,24 +34,60 @@
               </p>
             </div>
           </div>
+          <div class="scroll-down-wrapper">
+            <a href="#about-section" title="About" class="scroll-down">
+              <span class="scroll-down-text">More Info</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about-section" class="section"></section>
+    <section id="about-section" class="section">
+      <div class="section-wrapper">
+        <div class="fadeIn">
+          <h1 class="section-heading">Hello, Alex Clark here.</h1>
+          <h3 class="section-subheading">
+            I'm just a regular guy who is passionate about web development and game design.
+          </h3>
+          <span class="splitter"></span>
+          <div class="about-wrapper">
+            <div class="about-text-wrapper">
+              <p class="about-text-content">
+                I am Univeristy of Florida graduate who studied in computer science engineering, specifically Digital
+                Arts and Sciences. I have experience with both design and application development.
+              </p>
+              <p class="about-text-content">
+                I believe that there is no point in life where one should stop learning. I embrace challenges knowing
+                that every new experience sharpens my skills as a developer. I am passionate about doing things the
+                right way, some would call it picky but I like to think of it as 'detail oriented'.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Experience-->
-    <section id="experience-section" class="section"></section>
+    <!--<section id="experience-section" class="section"></section>-->
 
     <!-- Repositories -->
-    <section id="repo-section" class="section"></section>
+    <!--<section id="repo-section" class="section"></section>-->
 
     <!-- Contact -->
-    <section id="contact-section" class="section"></section>
+    <!--<section id="contact-section" class="section"></section>-->
 
     <!-- Footer -->
-    <section id="footer-section" class="section"></section>
+    <section id="footer-section" class="section">
+      <div class="section-wrapper">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a href="https://github.com/Aclark2089" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </div>
 
@@ -80,8 +119,13 @@
 
   -->
 
+<!-- Libs -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/lib/skrollr.min.js"></script>
+
 <!-- inject:js -->
 <!-- endinject -->
+
 
 </body>
 </html>
