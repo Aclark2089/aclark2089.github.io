@@ -1,1 +1,1 @@
-!function(d){d(function(){d(window),d(document);var n=d("body");d("html"),d("bodyHtml"),d("#wrapper");n.addClass9("is-loading")})}(jQuery);
+!function(d){d(function(){d(window),d(document);var n=d("body");d("html"),d("bodyHtml"),d("#wrapper");n.addClass("is-loading")})}(jQuery);

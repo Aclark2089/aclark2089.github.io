@@ -21,10 +21,15 @@
 
 <body>
 
-    <div id="skrollr-body">
+    <div id="slide-container">
+
+        <div id="slides" 
+            data-0="transform: translate(0%, 0%)"
+            data-100p="transform: translate(-50%, 0%)"
+        >
 
         <!-- Greeting -->
-        <section id="greeting-section" class="section">
+        <section id="slide-intro" class="slide">
             <div class="greeting-wrapper">
                 <div class="greeting-body">
                     <div class="greeting-content">
@@ -47,7 +52,7 @@
         </section>
 
         <!-- About -->
-        <section id="about-section" class="section">
+        <section id="slide-contact" class="slide">
             <div class="section-wrapper">
                 <div class="fadeIn">
                     <h1 class="section-heading">Hello, Alex Clark here.</h1>
@@ -76,11 +81,8 @@
         <!-- Repositories -->
         <!--<section id="repo-section" class="section"></section>-->
 
-        <!-- Contact -->
-        <!--<section id="contact-section" class="section"></section>-->
-
         <!-- Footer -->
-        <section id="footer-section" class="section">
+        <!-- <section id="footer-section" class="section">
             <div class="section-wrapper">
                 <ul class="contact-list">
                     <li class="contact-item">
@@ -88,7 +90,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
+
+        </div>
 
     </div>
 
@@ -128,6 +132,9 @@
     <script src="/assets/js/skrollr.min.js"></script>
     <!-- endinject -->
 
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
 
 </body>
 

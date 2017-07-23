@@ -70,6 +70,6 @@ gulp.task('prod', ['compile'], function(cb) {
 });
 
 // Inject into index.html for dev
-gulp.task('dev', ['sass'], function(cb) {
+gulp.task('dev', ['compile'], function(cb) {
     rs(['inject:dev']);
 });

@@ -1,15 +1,36 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   color: #f2f2f2;
   background-color: #1b1b1b;
   font-family: Whitney,Helvetica,Arial,sans-serif; }
 
-.section {
+#slide-container {
   width: 100%;
-  height: auto;
-  min-height: 700px;
-  padding: 0;
-  overflow: hidden;
-  color: #f2f2f2;
-  position: relative; }
+  height: 100%;
+  overflow: hidden; }
+
+#slides {
+  width: 200%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%; }
+
+#slide-intro {
+  background: url("/assets/images/tunnel.jpg") no-repeat center center;
+  background-size: cover; }
+
+#slide-contact {
+  background: url("/assets/images/green-gradient.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100);
+  transform: translate(100%, 0%); }
